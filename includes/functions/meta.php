@@ -75,31 +75,10 @@ function ewd_meta_tags()
 }
 
 /**
- * Use my jQuery instead of Wordpress's
- */
-function ewd_jquery() {
-	wp_deregister_script('jquery');
-	wp_register_script(
-		'jquery',
-		get_template_directory_uri() . '/js/jquery.3.2.1.min.js',
-		null ,
-		'3.2.1'
-	);
-	wp_enqueue_script('jquery');
-}
-// add_action('wp_enqueue_scripts', 'ewd_jquery');
-
-/**
  * general javascript files required by all pages
  */
 function ewd_general_javascript()
 {
-	// load compile javascript file
-	// wp_enqueue_script(
-	// 	'general',
-	// 	get_template_directory_uri() . '/js/build.min.js',
-	// 	array('jquery')
-	// );
 	wp_enqueue_script(
 		'app',
 		get_template_directory_uri() . '/js/app.js'
@@ -114,7 +93,7 @@ add_action('wp_enqueue_scripts', 'ewd_general_javascript');
  */
 function ewd_general_css()
 {
-	wp_enqueue_style('build');
+	wp_enqueue_style('app');
 }
 add_action('wp_print_styles', 'ewd_general_css');
 

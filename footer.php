@@ -2,8 +2,13 @@
 		</div> <!-- end #content -->
 
 		<div id="footer">
+			<hr>
 			<div class="container text-center">
-				<?php get_template_part('part/theme', 'footer'); ?>
+				<div class="row">
+					<div class="col-md-12 center">
+						Footer Section Content
+					</div>
+				</div>
 			</div> <!-- end #footer .container -->
 		</div> <!-- end #footer -->
 	</div> <!-- end #wrapper -->

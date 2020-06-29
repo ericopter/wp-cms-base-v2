@@ -29,9 +29,11 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-4">
-						<?php
-						get_template_part('part/theme', 'logo');
-						?>
+						<div id="identity">
+							<a href="<?php bloginfo('url'); ?>">
+								<img src="<?php echo get_template_directory_uri(''); ?>/images/logo.png" alt="<?php echo bloginfo('name'); ?>"  class="img-fluid"/>
+							</a>
+						</div>
 					</div>
 					<div class="col-md-8">
 						<?php
@@ -41,9 +43,12 @@
 				</div>
 			</div> <!-- end #header .container -->
 		</div> <!-- end #header -->
-		<div class="row">
+		<hr>
+		<div id="slideshow">
 			<div class="container">
-				<?php get_template_part('part/flexslider'); ?>
+				<div class="row">
+					<?php get_template_part('part/flexslider'); ?>
+				</div>
 			</div>
 		</div>
 		<div id="content">

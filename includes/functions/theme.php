@@ -29,7 +29,6 @@ function ewd_setup()
 	register_nav_menus(
 		array(
 			'header-menu' 	=> 'Header Area Menu',
-			'top-menu' 		=> 'Horizontal Nav Bar',
 			'footer-menu'	=> 'Footer Menu'
 		)
 	);
@@ -46,8 +45,7 @@ function ewd_register_styles()
 {
 	// Register all theme related assests
 	wp_register_style(
-		'build',
-		// get_bloginfo('template_url') . '/css/build.min.css',
+		'app',
 		get_bloginfo('template_url') . '/css/app.css',
 		null,
 		THEME_VERSION,

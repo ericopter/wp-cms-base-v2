@@ -13,9 +13,8 @@ let mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'js/')
     .sass('resources/sass/app.scss', 'css/')
-    .options({
-        processCssUrls: false
-   }).sourceMaps(true, 'source-map');
+    .options({processCssUrls: false})
+    .sourceMaps(true, 'source-map');
 
 // Full API
 // mix.js(src, output);

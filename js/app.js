@@ -19804,6 +19804,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! flexslider */ "./node_modules/flexslider/jquery.flexslider.js");
 
+__webpack_require__(/*! ./project */ "./resources/js/project.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -19819,6 +19821,18 @@ try {
 
   __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 } catch (e) {}
+
+/***/ }),
+
+/***/ "./resources/js/project.js":
+/*!*********************************!*\
+  !*** ./resources/js/project.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {// $('body').hide();
+});
 
 /***/ }),
 

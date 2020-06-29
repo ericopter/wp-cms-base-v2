@@ -8,7 +8,9 @@ define('ABSURL', str_replace($_SERVER['DOCUMENT_ROOT'], '', TEMPLATEPATH));
 // Define path to our includes directory
 define('INCLUDEPATH', dirname(realpath(__FILE__)) . '/includes/');
 
-// get all our other function files
+/**
+ * Load and custom function files
+ */
 $includeFunctionFiles = array(
 	'content',
 	'meta',
@@ -27,7 +29,9 @@ foreach ($includeFunctionFiles as $file) {
 	}
 }
 
-// Load our custom classes...
+/**
+ * Load any custom class files
+ */
 $includeClassFiles = array(
 	'wp-bootstrap-navwalker'
 );
