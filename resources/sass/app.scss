@@ -1,0 +1,11 @@
+// Variables
+@import '_variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+//  Flexslider
+@import '~flexslider/flexslider';
+@import '_flexslider';
+
+// Project styles
+@import 'project';

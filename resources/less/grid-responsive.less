@@ -1,0 +1,30 @@
+@import "variables.less";
+@import "mixins.less";
+
+/* #Regular Desktop Grid
+================================================== */
+@media only screen and (min-width: @gridTotalWidth) and (max-width: (@gridLargeTotalWidth - 1)) {
+    #grid > .core(@gridColumnWidth, @gridColumnMargin, @gridColumns);
+}
+
+/* #Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of @gridTabletWidth */
+@media only screen and (min-width: @gridTabletWidth) and (max-width: (@gridTotalWidth - 1)) {
+	#grid > .core (@gridTabletColumnWidth, @gridColumnMargin, @gridColumns)
+}
+
+
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of @gridMobileLandscapeWidth */
+@media only screen and (min-width: @gridMobileLandscapeWidth) and (max-width: (@gridTabletWidth - 1)) {
+    #grid > .mobile(@gridMobileLandscapeWidth, @gridColumns);
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of @gridMobilePortraitWidth */
+@media only screen and (max-width: (@gridMobileLandscapeWidth - 1)) {
+    #grid > .mobile(@gridMobilePortraitWidth, @gridColumns);
+}
