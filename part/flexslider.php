@@ -24,7 +24,7 @@ if (!$slides->have_posts()) {
 				$slides->the_post();
 
 				// get the image and strip the height attribute
-				$image = get_the_post_thumbnail(get_the_ID(), 'flexslider');
+				$image = get_the_post_thumbnail(get_the_ID(), 'flexslider', array('class' => 'img-thumbnail'));
 
 				// should we display the title and content?
 				$title = get_meta_box_value('_ewd_slide_display_title_value') ? get_the_title() : null;

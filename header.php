@@ -52,6 +52,21 @@
 				</div>
 			</div>
 		</div>
+		<?php else:
+			$image = get_the_post_thumbnail(get_the_ID(), 'flexslider', array('class' => 'img-thumbnail'));
+			if ($image) :
+			?>
+		<div id="banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12"><?php echo $image; ?></div>
+				</div>
+			</div>
+		</div>
+			<?php
+			endif;
+		?>
+
 		<?php endif; ?>
 		<div id="content">
 			<div class="container">

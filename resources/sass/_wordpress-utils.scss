@@ -1,3 +1,23 @@
+// Menu and header rules
+#identity {
+    img {
+        width: 100%;
+    }
+}
+
+#menu-main-menu {
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+// Featured image rules
+#banner {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 // Image alignment utilities
 .alignleft,
 img.alignleft {
