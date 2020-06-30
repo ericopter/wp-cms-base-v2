@@ -1,0 +1,54 @@
+// Image alignment utilities
+.alignleft,
+img.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}
+
+.alignright,
+img.alignright {
+    display: inline;
+    float: right;
+    margin-left: 10px;
+}
+
+.aligncenter,
+img.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.alignleft,
+img.alignright,
+img.aligncenter {
+    margin-bottom: 10px;
+}
+
+// Post navigation utilities
+.post-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-nav {
+    margin-top: 20px;
+    padding: 5px 0;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        border-top: $border-width solid $border-color;
+    }
+
+    .content-nav {
+        flex-grow: 1;
+    }
+
+    .nav-next {
+        text-align: right;
+    }
+}

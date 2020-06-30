@@ -72,11 +72,11 @@ function ewd_content_nav($nav_id = null, $query = null) {
 ?>
 <nav id="<?php echo $nav_id ?>">
 	<div class="nav-previous content-nav">
-		<?php previous_posts_link(__('<span class="meta-nav">&larr;</span> Previous Page', 'echotheme')); ?>
+		<?php previous_posts_link(__('<span class="meta-nav">&larr;</span> Newer Posts', 'echotheme')); ?>
 		&nbsp;
 	</div>
 	<div class="nav-next content-nav">
-		<?php next_posts_link(__('Next Page<span class="meta-nav">&rarr;</span>', 'echotheme')); ?>
+		<?php next_posts_link(__('Older Posts<span class="meta-nav">&rarr;</span>', 'echotheme')); ?>
 	</div>
 
 	<div class="clear"></div>
@@ -90,10 +90,10 @@ function ewd_content_nav($nav_id = null, $query = null) {
  */
 function ewd_post_nav() {
 ?>
-<nav id="nav-single">
-	<h3 class="assistive-text"><?php _e( 'Post navigation', 'echotheme' ); ?></h3>
-	<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'twentyeleven' ), true ); ?></span>
-	<span class="nav-next"><?php next_post_link( '%link', __( 'Next <span class="meta-nav">&rarr;</span>', 'echotheme' ), true ); ?></span>
+<nav id="nav-single" class="clearfix">
+	<!-- <h3 class="assistive-text"><?php _e( 'Post navigation', 'echotheme' ); ?></h3> -->
+	<span class="nav-previous content-nav"><?php next_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Newer', 'echotheme' ), true ); ?></span>
+	<span class="nav-next content-nav"><?php previous_post_link( '%link', __( 'Older <span class="meta-nav">&rarr;</span>', 'twentyeleven' ), true ); ?></span>
 </nav><!-- #nav-single -->
 <?php
 }

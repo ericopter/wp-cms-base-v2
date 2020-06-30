@@ -4,3 +4,5 @@ _*.txt
 .DS_Store
 *.log
 node_modules
+css/app.css*
+js/app.js

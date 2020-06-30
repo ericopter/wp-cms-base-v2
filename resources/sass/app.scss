@@ -1,11 +1,15 @@
 // Variables
-@import '_variables';
+@import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
 //  Flexslider
 @import '~flexslider/flexslider';
-@import '_flexslider';
+@import 'flexslider';
+
+// Import Wordpress functionality theme stuff...
+@import "wordpress-utils";
 
 // Project styles
 @import 'project';

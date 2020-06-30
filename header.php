@@ -44,6 +44,7 @@
 			</div> <!-- end #header .container -->
 		</div> <!-- end #header -->
 		<hr>
+		<?php if (is_front_page()): ?>
 		<div id="slideshow">
 			<div class="container">
 				<div class="row">
@@ -51,5 +52,6 @@
 				</div>
 			</div>
 		</div>
+		<?php endif; ?>
 		<div id="content">
 			<div class="container">

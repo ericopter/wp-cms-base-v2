@@ -13,7 +13,9 @@ $args = array(
     'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
     'walker'            => new WP_Bootstrap_Navwalker(),
 );
+
 $menu = wp_nav_menu($args);
+
 if ($menu) :
 ?>
 <nav class="navbar navbar-expand-lg navbar-light ">

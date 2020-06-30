@@ -9,9 +9,12 @@ if (have_posts()) :
 			<?php the_title(); ?>
 		</h1>
 	</header>
-	
+
 	<div class="post-excerpt">
-		<?php the_excerpt(); ?>
+		<?php
+		the_excerpt();
+		echo ewd_continue_reading_link();
+		?>
 	</div>
 </article>
 		<?php
