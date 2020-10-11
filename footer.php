@@ -1,6 +1,4 @@
-			</div> <!-- end #content .container -->
 		</div> <!-- end #content -->
-
 		<div id="footer">
 			<hr>
 			<div class="container text-center">

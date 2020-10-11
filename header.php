@@ -69,4 +69,3 @@
 
 		<?php endif; ?>
 		<div id="content">
-			<div class="container">
